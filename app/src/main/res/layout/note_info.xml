@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic"
+        android:scaleType="centerCrop"/>
+
+
+    <EditText
+        android:id="@+id/etitem_name"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Имя"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/img_item"
+        app:layout_constraintStart_toStartOf="@+id/img_item"
+        app:layout_constraintTop_toBottomOf="@+id/img_item" />
+
+    <EditText
+        android:id="@+id/etitem_count"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Количество"
+        android:inputType="number"
+        android:maxEms="6"
+        android:enabled="false"
+        android:minEms="1"
+        app:layout_constraintEnd_toEndOf="@+id/img_item"
+        app:layout_constraintStart_toStartOf="@+id/etitem_name"
+        app:layout_constraintTop_toBottomOf="@+id/etitem_name" />
+
+    <EditText
+        android:id="@+id/etitem_price"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Цена"
+        android:maxEms="10"
+        android:minEms="1"
+        android:enabled="false"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/img_item"
+        app:layout_constraintStart_toStartOf="@+id/etitem_count"
+        app:layout_constraintTop_toBottomOf="@+id/etitem_count" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Сохранить"
+        android:backgroundTint="@color/milkGray"
+        app:layout_constraintEnd_toEndOf="@+id/etitem_price"
+        app:layout_constraintStart_toStartOf="@+id/etitem_price"
+        app:layout_constraintTop_toBottomOf="@+id/etitem_price" />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/item_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        style="@style/TextAppearance.Material3.TitleLarge"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/img_item"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/img_item" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/item_count"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="count"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/item_name"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/item_name"-->
+<!--        style="@style/TextAppearance.Material3.TitleLarge"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/item_price"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="300 грн"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/item_count"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/item_count"-->
+<!--        style="@style/TextAppearance.Material3.TitleLarge"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
